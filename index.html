@@ -19,12 +19,14 @@
         <script src="script.js" async defer></script>
 
         <h1>Student Debt Calculator</h1>
-        <div>Loan Amount:</div>
-        <input type="text">
-        <div>Interest Rate:</div>
-        <input type="text">
-        <div>Loan Term:</div>
-        <input type="text">
-        <button type="submit">Submit</button>
+        <div>Loan Amount ($):</div>
+        <input type="text" id="amount">
+        <div>Interest Rate (%):</div>
+        <input type="text" id="rate">
+        <div>Loan Term (years):</div>
+        <input type="text" id="term">
+        <button type="submit" onclick="calculateMonthly()">Submit</button>
+
+        <div id="m">Monthly Payment ($):</div>
     </body>
 </html>
